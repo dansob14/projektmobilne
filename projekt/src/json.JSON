@@ -1,0 +1,15 @@
+﻿{
+    "nazwa": "i5-7500",
+    "socket": "LGA 1151",
+    "taktowanie": [
+      {
+        "bazowe": "3.4Ghz",
+        "turbo:": "3.8Ghz"
+      }
+    ],
+    "cena": "969 zł",
+    "zdjecie": "",
+    "rdzenie": 4,
+    "watki": 4,
+    "cache": "6Mb"
+  }

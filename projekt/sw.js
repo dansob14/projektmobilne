@@ -1,9 +1,11 @@
-var cacheName= 'news-v1';
+var cacheName= 'pcshop';
 const staticAssets= [
     './',
     './index.html',
     './src/master.css',
-    './manifest.webmanifest'
+    './src/index.js',
+    './manifest.webmanifest',
+    'https://api.jsonbin.io/b/6194e9c101558c731cc3e478'
 ]
 self.addEventListener("install", async e =>{
     const cache = await caches.open(cacheName);
