@@ -5,7 +5,7 @@ const staticAssets= [
     './src/master.css',
     './src/index.js',
     './manifest.webmanifest',
-    'https://api.jsonbin.io/b/6194e9c101558c731cc3e478'
+    'https://api.jsonbin.io/b/6194e9c101558c731cc3e478/7'
 ]
 self.addEventListener("install", async e =>{
     const cache = await caches.open(cacheName);
