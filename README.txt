@@ -1,2 +1,2 @@
-Sklep internetowy ze sprzetęm komputerowym
+Sklep internetowy ze sprzetęm komputerowym (procesory)
 technologia: PWA
