@@ -11,19 +11,10 @@ fetch('https://api.jsonbin.io/b/6194e9c101558c731cc3e478/7')
     .then(res => res.json())
     .then(data => obj = data)
     .then(() => {
-        addModal(obj)
         addDate(obj);
     });
-function addModal(obj){
-    var maindiv= document.getElementsByClassName("main");
-    var tmp= ""; 
-    for (var i = 0; i < obj.produkty.length; i++) {
-        tmp = maindiv[i].innerHTML;
-        tmp= "<div class=\"col-md-6 col-md-6 col-lg-4 d-flex justify-content-center text-center mb-2\"> <div class=\"card\" style=\"width: 18rem;\"><img class=\"card-img-top border cimg\" src=\"images/domyslny.jpg\" alt=\"Card image cap\"><div class=\"card-body\"><h5 class=\"card-title text-center jname\">x</h5><button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#exampleModalCenter8\">Szczegóły</button><div class=\"modal fade\" id=\"exampleModalCenter8\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\"><div class=\"modal-dialog modal-dialog-centered\" role=\"document\"><div class=\"modal-content text-left\"><div class=\"modal-header\"><h5 class=\"modal-title jname2\" id=\"exampleModalLongTitle8\">x</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body jdate pl-2\"><p><button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseExample8\" aria-expanded=\"false\" aria-controls=\"collapseExample\">Pokaż więcej</button></p><div class=\"collapse\" id=\"collapseExample8\"><div class=\"card card-body jdetails\"></div></div></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Zamknij</button></div></div></div></div></div></div></div>";
-        maindiv[i].innerHTML = tmp;
-    }
 
-}
+
 function addDate(obj) {
     var elemsImg = document.getElementsByClassName("cimg");
     var elemsName = document.getElementsByClassName("jname");
